@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Atividade - Reforma Protestante</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: #f3eadc;
+    color: #3b2a1a;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+  }
+
+  /* Título */
+  .title {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  /* Layout principal */
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* Imagens laterais */
+  .side {
+    width: 25%;
+  }
+
+  .side img {
+    max-width: 100%;
+  }
+
+  .label {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #e0d4c0;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+
+  /* Caixa de resposta */
+  .answer-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #c7b8a1;
+    font-size: 16px;
+    font-family: "Georgia", serif;
+    resize: vertical;
+    background: #fffdf8;
+  }
+
+  textarea::placeholder {
+    color: #999;
+  }
+
+  /* Responsivo */
+  @media (max-width: 900px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .side {
+      width: 60%;
+    }
+
+    .answer-box {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="title">
+    Se você fosse um conselheiro do Papa Leão X em 1517, que medidas teria sugerido para evitar a ruptura com Lutero?
+  </div>
+
+  <div class="content">
+
+    <!-- Lado esquerdo -->
+    <div class="side">
+      <img src="IMAGEM_PAPA.png" alt="Papa Leão X">
+      <div class="label">PAPA LEÃO X</div>
+    </div>
+
+    <!-- Caixa de resposta -->
+    <div class="answer-box">
+      <textarea placeholder="Digite sua resposta aqui..."></textarea>
+    </div>
+
+    <!-- Lado direito -->
+    <div class="side">
+      <img src="IMAGEM_LUTERO.png" alt="Martinho Lutero">
+      <div class="label">MARTINHO LUTERO</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
